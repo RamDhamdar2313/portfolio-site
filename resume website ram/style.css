@@ -1,0 +1,155 @@
+/* style.css — Modern Professional Resume Theme */
+
+:root {
+  --primary: #184B9C;
+  --accent: #2674F0;
+  --bg-light: #F7F9FC;
+  --text-dark: #1C1C1C;
+  --text-muted: #5A5A5A;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-light);
+  margin: 0;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: var(--white);
+  display: grid;
+  grid-template-columns: 35% 65%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+  background: var(--primary);
+  color: var(--white);
+  padding: 40px 30px;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.3);
+}
+
+.profile-section h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.profile-section .title {
+  font-size: 14px;
+  color: #E3E9F5;
+  margin-top: 4px;
+}
+
+.left-panel h2 {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+  margin-top: 28px;
+}
+
+.left-panel p, .left-panel li, .left-panel a {
+  font-size: 14px;
+  color: #E9EDF7;
+  text-decoration: none;
+}
+
+.left-panel a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.left-panel ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.left-panel li {
+  margin-bottom: 6px;
+}
+
+/* Right Panel */
+.right-panel {
+  padding: 40px;
+}
+
+.right-panel section {
+  margin-bottom: 32px;
+}
+
+.right-panel h2 {
+  font-size: 18px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.right-panel h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: var(--text-dark);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.right-panel ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.right-panel li {
+  margin-bottom: 8px;
+}
+
+.right-panel a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.right-panel a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left-panel {
+    text-align: center;
+  }
+  .right-panel {
+    padding: 30px 20px;
+  }
+}
